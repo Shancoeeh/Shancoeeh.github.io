@@ -1,2 +1,2 @@
-# shashank_nagarale_27.io
+# shashank_nagarale_27.github.io
 TRIAL WEBSITE
