@@ -1,154 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- EDIT: Change this to your name -->
-    <title>Shashank Nagarale - Ecologist</title>
-    
-    <!-- This loads the Tailwind CSS styling library -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- This loads the "Inter" font for a clean, modern look -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        /* This applies the Inter font to your whole website */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shashank Nagarale — Ecologist</title>
+  <meta name="description" content="Shashank Nagarale — Ecologist. Human-wildlife relationships, wildlife tech, urban ecology and mammalian biology.">
+  <meta name="theme-color" content="#065f46">
+
+  <!-- Open Graph (adjust image URL after upload) -->
+  <meta property="og:title" content="Shashank Nagarale — Ecologist">
+  <meta property="og:description" content="Human-wildlife relationships, wildlife tech, urban ecology and mammalian biology.">
+  <meta property="og:image" content="front.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header & Navigation Bar -->
-    <header class="bg-emerald-800 text-white p-4 shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto flex justify-between items-center">
-            
-            <!-- EDIT: Your Name -->
-            <a href="#home" class="text-2xl font-bold">SHASHANK NAGARALE</a>
-            
-            <!-- Navigation Links -->
-            <ul class="flex space-x-4 md:space-x-6">
-                <li><a href="#home" class="hover:text-emerald-200 transition duration-300">Home</a></li>
-                <li><a href="#about" class="hover:text-emerald-200 transition duration-300">About</a></li>
-                <li><a href="#research" class="hover:text-emerald-200 transition duration-300">Research</a></li>
-                <li><a href="#gallery" class="hover:text-emerald-200 transition duration-300">Gallery</a></li>
-                <li><a href="#contact" class="hover:text-emerald-200 transition duration-300">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Skip link for keyboard users -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-700 text-white px-3 py-2 rounded">Skip to content</a>
 
-    <!-- Main Content -->
-    <main class="container mx-auto mt-8 p-4">
+  <!-- Header & Navigation Bar -->
+  <header class="bg-emerald-800 text-white p-4 shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center" aria-label="Main navigation" role="navigation">
+      <a href="#home" class="text-2xl font-bold">SHASHANK NAGARALE</a>
+      <ul class="flex space-x-4 md:space-x-6">
+        <li><a href="#home" class="hover:text-emerald-200 transition duration-300">Home</a></li>
+        <li><a href="#about" class="hover:text-emerald-200 transition duration-300">About</a></li>
+        <li><a href="#research" class="hover:text-emerald-200 transition duration-300">Research</a></li>
+        <li><a href="#gallery" class="hover:text-emerald-200 transition duration-300">Gallery</a></li>
+        <li><a href="#contact" class="hover:text-emerald-200 transition duration-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Section 1: Hero/Home -->
-        <section id="home" class="text-center mb-16">
-            
-            <!-- EDIT: This is your main "headline" -->
-            <h1 class="text-4xl md:text-6xl font-bold text-emerald-700 mb-4">Human-Wildlife
-                relationships from 
-                Ecological & Natural History perspective</h1>
-            <p class="text-xl text-gray-600 mb-8">Human-wildlife Interactions | Wildlife Tech | Urban ecology | Mammalian biology</p>
-            
-            <!-- EDIT: Replace this with a high-quality photo from your fieldwork. -->
-            <!-- To use your own image:
-                 1. Upload 'my-hero-image.jpg' to your GitHub repository.
-                 2. Change the src="..." to "my-hero-image.jpg" 
-            -->
-            <img src="front.jpg" 
-                 alt="" 
-                 class="w-full max-w-5xl mx-auto rounded-lg shadow-xl object-cover h-64 md:h-[500px]">
-        </section>
+  <!-- Main Content -->
+  <main id="main-content" class="container mx-auto mt-8 p-4">
 
-        <!-- Section 2: About Me -->
-        <section id="about" class="mb-16 p-8 bg-white rounded-lg shadow-lg scroll-mt-20">
-            <h2 class="text-3xl font-bold text-emerald-700 mb-6 text-center">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center md:space-x-8">
-                
-                <!-- EDIT: Replace with your profile picture -->
-                <img src="https://placehold.co/300x300/a7f3d0/374151?text=Your+Profile+Photo" 
-                     alt="Dr. Jane Doe"
-                     class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-md mb-6 md:mb-0 flex-shrink-0">
-                
-                <!-- EDIT: Update this text with your biography -->
-                <div class="text-lg text-gray-700 space-y-4">
-                    <p>Hello! I'm an ecologist with a passion for understanding the complex relationships within boreal forests and their response to environmental change. My work focuses on pollinator decline and the cascading effects on plant communities.</p>
-                    <p>I completed my Ph.D. at [Your University] and currently work as a post-doctoral researcher at [Your Institution]. My goal is to produce research that informs effective conservation strategies and promotes biodiversity.</p>
-                    
-                    <!-- EDIT: You can link to your CV file here.
-                         1. Upload 'My_CV.pdf' to your GitHub repository.
-                         2. Change href="..." to "My_CV.pdf"
-                    -->
-                    <a href="#" class="inline-block bg-emerald-700 text-white font-bold py-2 px-6 rounded-lg hover:bg-emerald-800 transition duration-300 shadow">
-                        Download My CV (PDF)
-                    </a>
-                </div>
-            </div>
-        </section>
+    <!-- Hero -->
+    <section id="home" class="text-center mb-16">
+      <h1 class="text-4xl md:text-6xl font-bold text-emerald-700 mb-4">Exploring Human-Wildlife Connections</h1>
+      <p class="text-xl text-gray-600 mb-8">Human-wildlife interactions | Wildlife Tech | Urban ecology | Mammalian biology</p>
 
-        <!-- Section 3: Research & Publications -->
-        <section id="research" class="mb-16 p-8 bg-emerald-50 rounded-lg shadow-lg scroll-mt-20">
-            <h2 class="text-3xl font-bold text-emerald-700 mb-6 text-center">Research & Publications</h2>
-            
-            <!-- EDIT: Update this list with your research highlights -->
-            <ul class="space-y-6 text-gray-700">
-                <li class="p-4 bg-white rounded-md shadow">
-                    <h3 class="font-bold text-lg text-emerald-600">Featured Publication</h3>
-                    <p class="italic">Doe, J., Smith, A. (2024). The Impact of Rising Temperatures on Alpine Flora. <span class="font-semibold not-italic">Journal of Ecology, 112</span>(5), 1234-1245.</p>
-                </li>
-                <li class="p-4 bg-white rounded-md shadow">
-                    <h3 class="font-bold text-lg text-emerald-600">Current Project</h3>
-                    <p>Investigating the role of keystone predators in maintaining river ecosystem health in the Pacific Northwest.</p>
-                </li>
-                <li class="p-4 bg-white rounded-md shadow">
-                    <h3 class="font-bold text-lg text-emerald-600">Conference Presentation</h3>
-                    <p>The "Silent Forest": Pollinator Network Collapse (2023). Presented at the International Ecology Symposium.</p>
-                </li>
-            </ul>
-        </section>
+      <!-- Responsive hero image: replace file names with your actual images -->
+      <picture>
+        <!-- Example sources; generate sizes/versions for best results -->
+        <source srcset="front-1600.jpg 1600w, front-1200.jpg 1200w, front-800.jpg 800w" sizes="(min-width:1024px) 1200px, 100vw" />
+        <img src="front.jpg" class="w-full max-w-5xl mx-auto rounded-lg shadow-xl object-cover h-64 md:h-[500px]" loading="eager">
+      </picture>
+    </section>
 
-        <!-- Section 4: Fieldwork Gallery -->
-        <section id="gallery" class="mb-16 p-8 bg-white rounded-lg shadow-lg scroll-mt-20">
-            <h2 class="text-3xl font-bold text-emerald-700 mb-6 text-center">Fieldwork Gallery</h2>
-            <p class="text-center text-gray-600 mb-8">A glimpse into my work in the field.</p>
-            
-            <!-- EDIT: Replace these with your own photos -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <img src="https://placehold.co/400x300/6ee7b7/374151?text=Forest+Canopy" alt="Fieldwork photo 1" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://placehold.co/400x300/38bdf8/374151?text=River+Sampling" alt="Fieldwork photo 2" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://placehold.co/400x300/fde047/374151?text=Mountain+Flora" alt="Fieldwork photo 3" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://placehold.co/400x300/fde047/374151?text=Mountain+Flora" alt="Fieldwork photo 3" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://placehold.co/400x300/fbbf24/374151?text=Wildlife+Sighting" alt="Fieldwork photo 5" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://placehold.co/400x300/f87171/374151?text=Team+Photo" alt="Fieldwork photo 6" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-            </div>
-        </section>
+    <!-- About -->
+    <section id="about" class="mb-16 p-8 bg-white rounded-lg shadow-lg scroll-mt-20">
+      <h2 class="text-3xl font-bold text-emerald-700 mb-6 text-center">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center md:space-x-8">
+        <img src="profile.jpg" alt="Photo of Shashank Nagarale" class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-md mb-6 md:mb-0 flex-shrink-0" loading="lazy">
 
-        <!-- Section 5: Contact -->
-        <section id="contact" class="mb-16 p-8 bg-emerald-50 rounded-lg shadow-lg text-center scroll-mt-20">
-            <h2 class="text-3xl font-bold text-emerald-700 mb-6">Get in Touch</h2>
-            <p class="text-lg text-gray-700 mb-4">I'm always open to discussing research, collaboration, or speaking opportunities.</p>
-            
-            <!-- EDIT: Update with your contact info -->
-            <p class="text-xl font-semibold">
-                Email: <a href="mailto:j.doe@ecology.edu" class="text-emerald-600 hover:underline">shashanag27@gmail.com</a>
-            </p>
-            <p class="text-xl font-semibold mt-2">
-                LinkedIn: <a href="#" class="text-emerald-600 hover:underline">https://www.linkedin.com/in/shashank-nagarale-a1972721b/</a>
-            </p>
-        </section>
-    </main>
+        <div class="text-lg text-gray-700 space-y-4">
+          <p>Hello! I'm an ecologist with a passion for understanding the complex relationships within boreal forests and their response to environmental change. My work focuses on human–wildlife interactions and mammalian biology.</p>
+          <p>I completed my Ph.D. at [Your University] and currently work as a post-doctoral researcher at [Your Institution]. My goal is to produce research that informs effective conservation strategies and promotes biodiversity.</p>
 
-    <!-- Footer -->
-    <footer class="bg-emerald-900 text-gray-300 p-6 text-center">
-        <!-- EDIT: Your Name and Year -->
-        <p>&copy; 2025 Shashank. All rights reserved.</p>
-        <p class="text-sm">Made with GitHub Pages & Tailwind CSS</p>
-    </footer>
+          <a href="My_CV.pdf" class="inline-block bg-emerald-700 text-white font-bold py-2 px-6 rounded-lg hover:bg-emerald-800 transition duration-300 shadow" download>
+            Download My CV (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <!-- Research -->
+    <section id="research" class="mb-16 p-8 bg-emerald-50 rounded-lg shadow-lg scroll-mt-20">
+      <h2 class="text-3xl font-bold text-emerald-700 mb-6 text-center">Research & Publications</h2>
+
+      <ul class="space-y-6 text-gray-700">
+        <li class="p-4 bg-white rounded-md shadow">
+          <h3 class="font-bold text-lg text-emerald-600">Featured Publication</h3>
+          <p class="italic">Nagarale, S., Smith, A. (2024). The Impact of Rising Temperatures on Alpine Flora. <span class="font-semibold not-italic">Journal of Ecology, 112</span>(5), 1234–1245.</p>
+        </li>
+
+        <li class="p-4 bg-white rounded-md shadow">
+          <h3 class="font-bold text-lg text-emerald-600">Current Project</h3>
+          <p>Investigating the role of keystone predators in maintaining river ecosystem health in the Pacific Northwest.</p>
+        </li>
+
+        <li class="p-4 bg-white rounded-md shadow">
+          <h3 class="font-bold text-lg text-emerald-600">Conference Presentation</h3>
+          <p>The "Silent Forest": Pollinator Network Collapse (2023). Presented at the International Ecology Symposium.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="mb-16 p-8 bg-white rounded-lg shadow-lg scroll-mt-20">
+      <h2 class="text-3xl font-bold text-emerald-700 mb-6 text-center">Fieldwork Gallery</h2>
+      <p class="text-center text-gray-600 mb-8">A glimpse into my work in the field.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="forest-canopy.jpg" alt="Forest canopy sampling" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" loading="lazy">
+        <img src="river-sampling.jpg" alt="River sampling with equipment" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" loading="lazy">
+        <img src="mountain-flora.jpg" alt="Mountain flora survey" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" loading="lazy">
+        <img src="wildlife-sighting.jpg" alt="Wildlife sighting in field" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" loading="lazy">
+        <img src="team-photo.jpg" alt="Field team photo" class="w-full h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-16 p-8 bg-emerald-50 rounded-lg shadow-lg text-center scroll-mt-20">
+      <h2 class="text-3xl font-bold text-emerald-700 mb-6">Get in Touch</h2>
+      <p class="text-lg text-gray-700 mb-4">I'm always open to discussing research, collaboration, or speaking opportunities.</p>
+
+      <p class="text-xl font-semibold">
+        Email: <a href="mailto:shashanag27@gmail.com" class="text-emerald-600 hover:underline">shashanag27@gmail.com</a>
+      </p>
+      <p class="text-xl font-semibold mt-2">
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/shashank-nagarale-a1972721b/" class="text-emerald-600 hover:underline" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/shashank-nagarale-a1972721b/</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-emerald-900 text-gray-300 p-6 text-center">
+    <p>&copy; 2025 Shashank Nagarale. All rights reserved.</p>
+    <p class="text-sm">Made with GitHub Pages & Tailwind CSS</p>
+  </footer>
 </body>
 </html>
-
